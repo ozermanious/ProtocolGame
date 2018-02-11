@@ -15,7 +15,7 @@
 + (void)loadProtocol
 {
 	Protocol *protocol = @protocol(ChewbaccaProtocol);
-	NSLog(@"Protocol loaded: %@", protocol);
+	CLog(@"[LOADED] %@", protocol);
 }
 
 @end
