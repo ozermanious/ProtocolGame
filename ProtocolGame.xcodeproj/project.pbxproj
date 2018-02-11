@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B216DDD12030A09D00644012 /* libChewbacca.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B227296520309F1D00CCCB3B /* libChewbacca.dylib */; };
 		B2BB6FB920304AE00001F9D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FB820304AE00001F9D6 /* main.m */; };
 		B2BB6FC320304CE60001F9D6 /* Chewbacca.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FC220304CE60001F9D6 /* Chewbacca.m */; };
-		B2BB6FC9203054BB0001F9D6 /* Chewbacca_mock.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FC8203054BB0001F9D6 /* Chewbacca_mock.m */; };
 		B2BB6FCC203055640001F9D6 /* RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FCB203055640001F9D6 /* RuntimeHelper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B216DDCC20309F4300644012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B227296020309F1D00CCCB3B /* Chewbacca.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B227295320309F1500CCCB3B;
+			remoteInfo = Chewbacca;
+		};
+		B227296420309F1D00CCCB3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B227296020309F1D00CCCB3B /* Chewbacca.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B227295420309F1500CCCB3B;
+			remoteInfo = Chewbacca;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B2BB6FB320304AE00001F9D6 /* CopyFiles */ = {
@@ -27,13 +44,11 @@
 
 /* Begin PBXFileReference section */
 		B227294A2030961200CCCB3B /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		B227296020309F1D00CCCB3B /* Chewbacca.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Chewbacca.xcodeproj; path = Chewbacca/Chewbacca.xcodeproj; sourceTree = SOURCE_ROOT; };
 		B2BB6FB520304AE00001F9D6 /* ProtocolGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProtocolGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BB6FB820304AE00001F9D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B2BB6FC020304CAA0001F9D6 /* ChewbaccaProtocol_mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChewbaccaProtocol_mock.h; sourceTree = "<group>"; };
 		B2BB6FC120304CE60001F9D6 /* Chewbacca.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chewbacca.h; sourceTree = "<group>"; };
 		B2BB6FC220304CE60001F9D6 /* Chewbacca.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chewbacca.m; sourceTree = "<group>"; };
-		B2BB6FC7203054BB0001F9D6 /* Chewbacca_mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chewbacca_mock.h; sourceTree = "<group>"; };
-		B2BB6FC8203054BB0001F9D6 /* Chewbacca_mock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chewbacca_mock.m; sourceTree = "<group>"; };
 		B2BB6FCA203055640001F9D6 /* RuntimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHelper.h; sourceTree = "<group>"; };
 		B2BB6FCB203055640001F9D6 /* RuntimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHelper.m; sourceTree = "<group>"; };
 		B2BB6FCD203057430001F9D6 /* ChewbaccaProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChewbaccaProtocol.h; sourceTree = "<group>"; };
@@ -44,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B216DDD12030A09D00644012 /* libChewbacca.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,11 +75,27 @@
 			name = "Runtime Helper";
 			sourceTree = "<group>";
 		};
+		B216DDD02030A09D00644012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B227296120309F1D00CCCB3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B227296520309F1D00CCCB3B /* libChewbacca.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B2BB6FAC20304AE00001F9D6 = {
 			isa = PBXGroup;
 			children = (
 				B2BB6FB720304AE00001F9D6 /* ProtocolGame */,
 				B2BB6FB620304AE00001F9D6 /* Products */,
+				B216DDD02030A09D00644012 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +110,8 @@
 		B2BB6FB720304AE00001F9D6 /* ProtocolGame */ = {
 			isa = PBXGroup;
 			children = (
+				B227296020309F1D00CCCB3B /* Chewbacca.xcodeproj */,
 				B2BB6FCE20305AB70001F9D6 /* Chewbacca */,
-				B2BB6FCF20305AC90001F9D6 /* Chewbacca mock */,
 				B211A870203064F300D8D777 /* Runtime Helper */,
 				B2BB6FB820304AE00001F9D6 /* main.m */,
 				B227294A2030961200CCCB3B /* Prefix.pch */,
@@ -97,16 +129,6 @@
 			name = Chewbacca;
 			sourceTree = "<group>";
 		};
-		B2BB6FCF20305AC90001F9D6 /* Chewbacca mock */ = {
-			isa = PBXGroup;
-			children = (
-				B2BB6FC020304CAA0001F9D6 /* ChewbaccaProtocol_mock.h */,
-				B2BB6FC7203054BB0001F9D6 /* Chewbacca_mock.h */,
-				B2BB6FC8203054BB0001F9D6 /* Chewbacca_mock.m */,
-			);
-			name = "Chewbacca mock";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +143,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B216DDCD20309F4300644012 /* PBXTargetDependency */,
 			);
 			name = ProtocolGame;
 			productName = ProtocolGame;
@@ -152,6 +175,12 @@
 			mainGroup = B2BB6FAC20304AE00001F9D6;
 			productRefGroup = B2BB6FB620304AE00001F9D6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B227296120309F1D00CCCB3B /* Products */;
+					ProjectRef = B227296020309F1D00CCCB3B /* Chewbacca.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B2BB6FB420304AE00001F9D6 /* ProtocolGame */,
@@ -159,19 +188,36 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B227296520309F1D00CCCB3B /* libChewbacca.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libChewbacca.dylib;
+			remoteRef = B227296420309F1D00CCCB3B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2BB6FB120304AE00001F9D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B2BB6FC320304CE60001F9D6 /* Chewbacca.m in Sources */,
-				B2BB6FC9203054BB0001F9D6 /* Chewbacca_mock.m in Sources */,
 				B2BB6FCC203055640001F9D6 /* RuntimeHelper.m in Sources */,
 				B2BB6FB920304AE00001F9D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B216DDCD20309F4300644012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Chewbacca;
+			targetProxy = B216DDCC20309F4300644012 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B2BB6FBA20304AE00001F9D6 /* Debug */ = {

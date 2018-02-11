@@ -7,16 +7,13 @@
 //
 
 #import "Chewbacca.h"
-#import "ChewbaccaProtocol.h"
 
 
 @implementation Chewbacca
 
-+ (void)loadProtocol
+- (void)chewee_original
 {
-	Protocol *protocol = @protocol(ChewbaccaProtocol);
-//	Protocol *protocol = nil;
-	CLog(@"[LOADED] %@", protocol);
+	CLog(@"[CALLED] Chewbacca.chewee_original");
 }
 
 @end
