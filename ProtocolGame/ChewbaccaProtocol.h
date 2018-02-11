@@ -8,6 +8,6 @@
 
 @protocol ChewbaccaProtocol
 
-- (void)walk;
+- (void)chewee_original;
 
 @end

@@ -11,14 +11,9 @@
 
 @implementation Chewbacca_mock
 
-- (void)walk
+- (void)chewee_mock
 {
-	NSLog(@"🐻 walk [mock]");
-}
-
-- (void)sayTheEmpireStrikesBack
-{
-	NSLog(@"🐻 WAGRRRRWWGAHHHHWWWRRGGAWWWWWWRR");
+	CLog(@"[CALLED] Chewbacca_mock.chewee_mock");
 }
 
 @end

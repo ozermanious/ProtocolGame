@@ -8,9 +8,7 @@
 
 @protocol ChewbaccaProtocol
 
-- (void)walk;
-
-- (void)sayTheEmpireStrikesBack;
+- (void)chewee_mock;
 
 @end
 

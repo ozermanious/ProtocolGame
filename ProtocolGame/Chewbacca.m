@@ -11,9 +11,9 @@
 
 @implementation Chewbacca
 
-- (void)walk
+- (void)chewee_original
 {
-	NSLog(@"🐻 walk");
+	CLog(@"[CALLED] Chewbacca.chewee_original");
 }
 
 @end

@@ -14,8 +14,8 @@
 
 - (void)cheweeAction
 {
-	[self.chewbacca walk];
-//	[self.chewbacca sayTheEmpireStrikesBack];
+	CLog(@"[CALLED] ChewbaccaContainer.cheweeAction");
+	[self.chewbacca chewee_original];
 }
 
 @end
