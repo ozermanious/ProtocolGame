@@ -7,18 +7,15 @@
 //
 
 #import "Chewbacca_mock.h"
+#import "ChewbaccaProtocol_mock.h"
 
 
 @implementation Chewbacca_mock
 
-- (void)walk
++ (void)loadProtocol
 {
-	NSLog(@"🐻 walk [mock]");
-}
-
-- (void)sayTheEmpireStrikesBack
-{
-	NSLog(@"🐻 WAGRRRRWWGAHHHHWWWRRGGAWWWWWWRR");
+	Protocol *protocol = @protocol(ChewbaccaProtocol);
+	NSLog(@"Protocol loaded: %@", protocol);
 }
 
 @end

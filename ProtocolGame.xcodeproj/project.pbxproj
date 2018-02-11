@@ -11,7 +11,6 @@
 		B2BB6FC320304CE60001F9D6 /* Chewbacca.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FC220304CE60001F9D6 /* Chewbacca.m */; };
 		B2BB6FC9203054BB0001F9D6 /* Chewbacca_mock.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FC8203054BB0001F9D6 /* Chewbacca_mock.m */; };
 		B2BB6FCC203055640001F9D6 /* RuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FCB203055640001F9D6 /* RuntimeHelper.m */; };
-		B2BB6FD2203060C20001F9D6 /* ChewbaccaContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB6FD1203060C20001F9D6 /* ChewbaccaContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,8 +36,6 @@
 		B2BB6FCA203055640001F9D6 /* RuntimeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHelper.h; sourceTree = "<group>"; };
 		B2BB6FCB203055640001F9D6 /* RuntimeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHelper.m; sourceTree = "<group>"; };
 		B2BB6FCD203057430001F9D6 /* ChewbaccaProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChewbaccaProtocol.h; sourceTree = "<group>"; };
-		B2BB6FD0203060C20001F9D6 /* ChewbaccaContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChewbaccaContainer.h; sourceTree = "<group>"; };
-		B2BB6FD1203060C20001F9D6 /* ChewbaccaContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChewbaccaContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +79,6 @@
 			children = (
 				B2BB6FCE20305AB70001F9D6 /* Chewbacca */,
 				B2BB6FCF20305AC90001F9D6 /* Chewbacca mock */,
-				B2BB6FD3203060D40001F9D6 /* Container */,
 				B211A870203064F300D8D777 /* Runtime Helper */,
 				B2BB6FB820304AE00001F9D6 /* main.m */,
 			);
@@ -107,15 +103,6 @@
 				B2BB6FC8203054BB0001F9D6 /* Chewbacca_mock.m */,
 			);
 			name = "Chewbacca mock";
-			sourceTree = "<group>";
-		};
-		B2BB6FD3203060D40001F9D6 /* Container */ = {
-			isa = PBXGroup;
-			children = (
-				B2BB6FD0203060C20001F9D6 /* ChewbaccaContainer.h */,
-				B2BB6FD1203060C20001F9D6 /* ChewbaccaContainer.m */,
-			);
-			name = Container;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +166,6 @@
 				B2BB6FC9203054BB0001F9D6 /* Chewbacca_mock.m in Sources */,
 				B2BB6FCC203055640001F9D6 /* RuntimeHelper.m in Sources */,
 				B2BB6FB920304AE00001F9D6 /* main.m in Sources */,
-				B2BB6FD2203060C20001F9D6 /* ChewbaccaContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

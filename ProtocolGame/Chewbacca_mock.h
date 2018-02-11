@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ChewbaccaProtocol_mock.h"
 
 
-@interface Chewbacca_mock : NSObject <ChewbaccaProtocol>
+@interface Chewbacca_mock : NSObject
+
++ (void)loadProtocol;
 
 @end

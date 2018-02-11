@@ -7,13 +7,15 @@
 //
 
 #import "Chewbacca.h"
+#import "ChewbaccaProtocol.h"
 
 
 @implementation Chewbacca
 
-- (void)walk
++ (void)loadProtocol
 {
-	NSLog(@"🐻 walk");
+	Protocol *protocol = @protocol(ChewbaccaProtocol);
+	NSLog(@"Protocol loaded: %@", protocol);
 }
 
 @end

@@ -8,18 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "RuntimeHelper.h"
-#import "ChewbaccaContainer.h"
 #import "Chewbacca.h"
+#import "Chewbacca_mock.h"
 
 
 int main(int argc, const char * argv[])
 {
 	@autoreleasepool
 	{
-		ChewbaccaContainer *container = [ChewbaccaContainer new];
-		container.chewbacca = [Chewbacca new];
-		[container cheweeAction];
-		
+		[Chewbacca loadProtocol];
+		[Chewbacca_mock loadProtocol];
+
 		[RuntimeHelper exploreChewbaccaProtocol];
 	}
 	return 0;
