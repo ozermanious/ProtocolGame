@@ -13,4 +13,6 @@
 
 + (void)exploreChewbaccaProtocol;
 
++ (void)exploreClass:(Class)class;
+
 @end

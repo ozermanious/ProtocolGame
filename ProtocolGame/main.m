@@ -20,7 +20,11 @@ int main(int argc, const char * argv[])
 		container.chewbacca = [Chewbacca new];
 		[container cheweeAction];
 		
-		[RuntimeHelper exploreChewbaccaProtocol];
+//		[RuntimeHelper exploreClass:NSClassFromString(@"Chewbacca")];
+//		[RuntimeHelper exploreClass:NSClassFromString(@"Chewbacca_mock")];
+//		[RuntimeHelper exploreChewbaccaProtocol];
+
+		CLog(@"\n\n");
 	}
 	return 0;
 }

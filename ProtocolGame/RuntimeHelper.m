@@ -20,7 +20,7 @@
 + (void)exploreProtocolWithName:(NSString *)protocolName
 {
 	CLog(@"\n\n");
-	CLog(@"[RuntimeHelper] Exploring @\"%@\"...", protocolName);
+	CLog(@"[RuntimeHelper] Exploring PROTOCOL <%@>...", protocolName);
 
 	Protocol *protocol = NSProtocolFromString(protocolName);
 	if (!protocol)
@@ -38,11 +38,25 @@
 			struct objc_method_description method = methodList[methodIndex];
 			NSString *methodName = NSStringFromSelector(method.name);
 			NSString *methodTypes = [NSString stringWithUTF8String:method.types];
-			CLog(@"Method: %@ (%@)", methodName, methodTypes);
+			CLog(@"✅ Method: %@ (%@)", methodName, methodTypes);
 		}
 		free(methodList);
 	}
+}
+
++ (void)exploreClass:(Class)class
+{
 	CLog(@"\n\n");
+	CLog(@"[RuntimeHelper] Exploring CLASS <%@>...", NSStringFromClass(class));
+	
+	unsigned int count = 0;
+	Protocol *__unsafe_unretained *protocolList = class_copyProtocolList(class, &count);
+	for (unsigned int protocolIndex = 0; protocolIndex < count; protocolIndex++)
+	{
+		Protocol *protocol = protocolList[protocolIndex];
+		CLog(@"✅ Protocol found: %@", protocol);
+	}
+	free(protocolList);
 }
 
 @end
