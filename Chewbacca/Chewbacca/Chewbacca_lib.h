@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ChewbaccaProtocol_lib.h"
 
 
-@interface Chewbacca_lib : NSObject <ChewbaccaProtocol>
+@protocol ChewbaccaProtocol;
+
+
+@interface Chewbacca_lib : NSObject
+
+@property (nonatomic, strong) id<ChewbaccaProtocol> chewbacca;
 
 @end

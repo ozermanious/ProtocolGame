@@ -12,7 +12,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B216DDCF20309F7B00644012 /* ChewbaccaProtocol_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChewbaccaProtocol_lib.h; sourceTree = "<group>"; };
 		B227295420309F1500CCCB3B /* libChewbacca.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libChewbacca.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B227295720309F1500CCCB3B /* Chewbacca_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chewbacca_lib.h; sourceTree = "<group>"; };
 		B227295920309F1500CCCB3B /* Chewbacca_lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chewbacca_lib.m; sourceTree = "<group>"; };
@@ -48,7 +47,6 @@
 		B227295620309F1500CCCB3B /* Chewbacca */ = {
 			isa = PBXGroup;
 			children = (
-				B216DDCF20309F7B00644012 /* ChewbaccaProtocol_lib.h */,
 				B227295720309F1500CCCB3B /* Chewbacca_lib.h */,
 				B227295920309F1500CCCB3B /* Chewbacca_lib.m */,
 			);

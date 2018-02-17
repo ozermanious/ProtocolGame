@@ -11,9 +11,18 @@
 
 @implementation Chewbacca_lib
 
-- (void)chewee_library
++ (void)load
 {
-	CLog(@"[CALLED] Chewbacca_lib.chewee_library");
+	Protocol *protocol = NSProtocolFromString(@"ChewbaccaProtocol");
+	
+	if (protocol)
+	{
+		CLog(@"[LIB] ✅ Protocol found: %@", protocol);
+	}
+	else
+	{
+		CLog(@"[LIB] ⚠️ Protocol not found!");
+	}
 }
 
 @end
